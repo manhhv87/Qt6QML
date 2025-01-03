@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.16)
 
 project(Image VERSION 0.1 LANGUAGES CXX)
 
+# Enable AUTORCC in your CMakeLists.txt file for files
+# inside resource.qrc to load properly
+set(CMAKE_AUTORCC ON)
+
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Quick)
@@ -17,6 +21,7 @@ qt_add_qml_module(appImage
     VERSION 1.0
     QML_FILES
         Main.qml
+        RESOURCES resource.qrc
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

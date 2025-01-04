@@ -24,7 +24,7 @@ qt_add_qml_module(${MODULE_NAME}
     URI ${MODULE_NAME}
     VERSION 0.1
     QML_FILES ${QML_SOURCES}
-    SOURCES ${CPP_SOURCES} ${HPP_SOURCES}    
+    SOURCES ${CPP_SOURCES} ${HPP_SOURCES}
 )
 
 set_target_properties(${MODULE_NAME} PROPERTIES

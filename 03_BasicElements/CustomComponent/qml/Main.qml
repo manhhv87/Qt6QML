@@ -15,7 +15,7 @@ Window {
     title: qsTr("Custom Components Demo")
     color: AppStyle.background
 
-    /* Custom button */
+    // /* Custom button */
     // RowLayout {
     //     spacing: 100
     //     anchors.centerIn: parent
@@ -160,32 +160,188 @@ Window {
     //     }
     // }
 
-    /* Custom dropdown */
+    // /* Custom ComboBox */
+    // ColumnLayout {
+    //     spacing: 400
+    //     anchors.centerIn: parent
+
+    //     RowLayout {
+    //         spacing: 100
+
+    //         CustomComboBox {
+    //             model: ["one 1", "two 2", "three 3", "four 4"]
+    //         }
+
+    //         CustomComboBox {
+    //             model: ["one", "two", "three", "four"]
+    //         }
+    //     }
+
+    //     RowLayout {
+    //         spacing: 100
+
+    //         CustomComboBox {
+    //             model: ["Aksh", "Qt Developer", "C++ Style", "four 4"]
+    //         }
+
+    //         CustomComboBox {
+    //             model:["Drop Down", "Something", "Remove", "four"]
+    //         }
+    //     }
+    // }
+
+    // /* Custom switch */
+    // ColumnLayout {
+    //     spacing: 100
+    //     anchors.centerIn: parent
+
+    //     RowLayout {
+    //         spacing: 100
+
+    //         CustomSwitch {
+    //             text: qsTr("Switch")
+    //             checked: true
+    //         }
+
+    //         CustomSwitch {
+    //             text: qsTr("Switch")
+    //             checked: false
+    //         }
+
+    //         CustomSwitch {
+    //             text: qsTr("Switch")
+    //             checked: true
+    //         }
+    //     }
+
+    //     RowLayout {
+    //         spacing: 100
+
+    //         CustomSwitch {
+    //             text: qsTr("Switch")
+    //             backgroundColor: "#3B71CA"
+    //             checked: true
+    //         }
+
+    //         CustomSwitch {
+    //             backgroundColor:"#E4A11B"
+    //             text: qsTr("Switch")
+    //             checked: false
+    //         }
+
+    //         CustomSwitch {
+    //             backgroundColor:"#14A44D"
+    //             text: qsTr("Switch")
+    //             checked: true
+    //         }
+    //     }
+
+    //     RowLayout {
+    //         spacing: 100
+
+    //         CustomSwitch {
+    //             text: qsTr("Switch")
+    //             backgroundColor: "#E4A11B"
+    //             checked: true
+    //         }
+
+    //         CustomSwitch {
+    //             backgroundColor:"#332D2D"
+    //             text: qsTr("Switch")
+    //             checked: false
+    //         }
+
+    //         CustomSwitch {
+    //             backgroundColor:"#DC4C64"
+    //             text: qsTr("Switch")
+    //             checked: true
+    //         }
+    //     }
+    // }
+
+    /* CustomTextField */
     ColumnLayout {
-        spacing: 400
+        spacing: 50
         anchors.centerIn: parent
 
         RowLayout {
-            spacing: 100
+            spacing: 50
+            width: parent.width
 
-            CustomDropDown {
-                model: ["one 1", "two 2", "three 3", "four 4"]
+            CustomTextField {
+                implicitWidth: 300
+                implicitHeight: 55
+                isBold:true
+                placeholderText: qsTr("Primary")
+                selectedTextColor: "#FFFFFF"
+                selectionColor: "green"
+                radius: 8
+                borderColor: "#3B71CA"
             }
 
-            CustomDropDown{
-                model: ["one", "two", "three", "four"]
+            CustomTextField {
+                implicitWidth: 300
+                implicitHeight: 55
+                isBold: true
+                placeholderText: qsTr("Error")
+                selectedTextColor: "#FFFFFF"
+                selectionColor: "blue"
+                radius: 12
+                borderColor: "#FF0000"
             }
         }
 
         RowLayout {
-            spacing: 100
+            spacing: 50
+            width: parent.width
 
-            CustomDropDown {
-                model: ["Aksh", "Qt Developer", "C++ Style", "four 4"]
+            CustomTextField{
+                implicitWidth: 300
+                implicitHeight: 55
+                isBold: false
+                placeholderText: qsTr("Danger")
+                selectedTextColor: "#FFFFFF"
+                selectionColor: "blue"
+                radius: 18
+                borderColor: "#DC4C64"
             }
 
-            CustomDropDown {
-                model:["Drop Down", "Something", "Remove", "four"]
+            CustomTextField {
+                implicitWidth: 300
+                implicitHeight: 55
+                isBold: false
+                placeholderText: qsTr("Success")
+                selectedTextColor: "#FFFFFF"
+                selectionColor: "blue"
+                radius: 18
+                borderColor : "#14A44D"
+            }
+        }
+
+        RowLayout {
+            spacing: 50
+            width: parent.width
+
+            CustomTextField {
+                implicitWidth: 300
+                implicitHeight: 55
+                isBold: false
+                placeholderText: qsTr("Info")
+                selectedTextColor: "#FFFFFF"
+                selectionColor: "blue"
+                radius: 18
+                borderColor: "#54B4D3"
+            }
+
+            CustomTextField {
+                implicitWidth: 300
+                implicitHeight: 55
+                isBold: false
+                placeholderText: qsTr("Warning")
+                selectedTextColor: "#FFFFFF"
+                selectionColor: "blue"
+                radius: 18
+                borderColor : "#E4A11B"
             }
         }
     }

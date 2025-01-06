@@ -95,7 +95,7 @@ Button {
     }
 
     ParallelAnimation {
-        id: main
+        id: anim
 
         NumberAnimation {
             target: indicator
@@ -117,6 +117,6 @@ Button {
     onPressed: {
         indicator.mx = mouseArea.mouseX
         indicator.my = mouseArea.mouseY
-        main.restart()
+        anim.restart()
     }
 }

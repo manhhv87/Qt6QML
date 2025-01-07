@@ -48,14 +48,41 @@ ComboBox {
                 Layout.leftMargin: 10
             }
 
-//            Image{
-//                visible: root.currentIndex === index
-//                source: "qrc:/Images/tick.svg"
-//                verticalAlignment: Image.AlignVCenter
-//                horizontalAlignment: Image.AlignRight
-//                Layout.alignment: Qt.AlignVCenter
-//                Layout.rightMargin: 10
-//            }
+            Image {
+                source: "qrc:/assets/Images/tick.svg"
+                sourceSize: Qt.size(24,24)
+                visible: root.currentIndex === index
+                verticalAlignment: Image.AlignVCenter
+                horizontalAlignment: Image.AlignRight
+                Layout.alignment: Qt.AlignVCenter
+                Layout.rightMargin: 10
+            }
+        }
+    }
+
+    indicator: Canvas {
+        id: canvas
+        x: root.width - width - 10
+        y: (root.availableHeight - height) / 2
+        width: 12
+        height: 8
+        contextType: "2d"
+
+        Connections {
+            target: root
+            function onPressedChanged(){
+                canvas.requestPaint()
+            }
+        }
+
+        onPaint: {
+            context.reset();
+            context.moveTo(0, 0);
+            context.lineTo(width, 0);
+            context.lineTo(width / 2, height);
+            context.closePath();
+            context.fillStyle = "white"
+            context.fill();
         }
     }
 

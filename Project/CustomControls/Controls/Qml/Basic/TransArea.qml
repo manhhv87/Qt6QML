@@ -1,5 +1,4 @@
 import QtQuick 2.9
-import QtQuick.Controls 2.2
 
 // Mouse event transparent transmission
 MouseArea {
@@ -9,11 +8,11 @@ MouseArea {
 
     // Mouse icon, this icon is displayed when hovered or pressed
     cursorShape: Qt.PointingHandCursor
-    onDoubleClicked: { mouse.accepted = false;}
-    onPositionChanged: { mouse.accepted = false;}
-    onPressed: { mouse.accepted = false; }
-    onPressAndHold: { mouse.accepted = false; }
-    onClicked: { mouse.accepted = false;}
-    onReleased: { mouse.accepted = false;}
-    onWheel: { wheel.accepted = false; }
+    onDoubleClicked: (mouse)=> { mouse.accepted = false;}
+    onPositionChanged: (mouse)=> { mouse.accepted = false;}
+    onPressed: (mouse)=> { mouse.accepted = false; }
+    onPressAndHold: (mouse)=> { mouse.accepted = false; }
+    onClicked: (mouse)=> { mouse.accepted = false;}
+    onReleased: (mouse)=> { mouse.accepted = false;}
+    onWheel: (wheel)=> { wheel.accepted = false; }
 }

@@ -1,12 +1,13 @@
 import QtQuick 2.9
-import QtQuick.Controls 2.2
 
 MouseArea {
     id: moveArea
 
     property int lastX: 0
     property int lastY: 0
-    property var control: parent //导出一个control属性，指定要拖动的目标， 默认就用parent好了。注意目标要有x和y属性并且可修改
+    property var control: parent    // Export a control attribute to specify the target to be dragged.
+                                    // By default, parent is used. Note that the target must have
+                                    // x and y attributes and can be modified.
 
     signal move(real xOffset, real yOffset)
 

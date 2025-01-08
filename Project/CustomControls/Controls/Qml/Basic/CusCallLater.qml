@@ -1,5 +1,4 @@
 import QtQuick 2.12
-import QtQuick.Controls 2.12
 
 Item {
     Component {
@@ -8,10 +7,12 @@ Item {
             id: timer
             repeat: false
             property var _cb: function() {}
+
             onTriggered: {
                 _cb()
                 destroy(parent)
             }
+
             function setTimeout(callback, delayTime) {
                 _cb = callback;
                 interval = delayTime;
@@ -19,6 +20,7 @@ Item {
             }
         }
     }
+
     function callLate(callback, delayTime) {
         var timerObj = timerComp.createObject()
         timerObj.setTimeout(callback, delayTime)

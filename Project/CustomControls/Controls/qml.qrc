@@ -94,5 +94,8 @@
         <file>Images/arrow-right.png</file>
         <file>Images/arrow-left.png</file>
         <file>Images/arrow-down.png</file>
+        <file>Qml/CusImage/CusImage.qml</file>
+        <file>Qml/CusImage/CusImageOverlay.qml</file>
+        <file>Qml/CusImage/CusImage_Tip.qml</file>
     </qresource>
 </RCC>

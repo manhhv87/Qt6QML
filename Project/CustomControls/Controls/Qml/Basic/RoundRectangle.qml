@@ -1,5 +1,4 @@
 import QtQuick 2.9
-import QtQuick.Controls 2.2
 
 // Rectangle simulates a rounded rectangle. It does not depend on other modules
 // and can be used in basic Qt versions.
@@ -44,22 +43,22 @@ Rectangle {
         model: [{
                 "x": 0,
                 "y": 0,
-                "visible": internal.aligns(lt),
+                "visible": internal.aligns(root.lt),
                 "radius": root.radius
             }, {
                 "x": root.width - root.radius,
                 "y": 0,
-                "visible": internal.aligns(rt),
+                "visible": internal.aligns(root.rt),
                 "radius": root.radius
             }, {
                 "x": 0,
                 "y": root.height - root.radius,
-                "visible": internal.aligns(lb),
+                "visible": internal.aligns(root.lb),
                 "radius": root.radius
             }, {
                 "x": root.width - root.radius,
                 "y": root.height - root.radius,
-                "visible": internal.aligns(rb),
+                "visible": internal.aligns(root.rb),
                 "radius": root.radius
             }]
 

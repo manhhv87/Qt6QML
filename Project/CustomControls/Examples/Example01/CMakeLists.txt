@@ -8,7 +8,7 @@ project(${EXECUTABLE_NAME} VERSION 0.1 LANGUAGES CXX)
 # Tell CMake to call moc automaticly
 set(CMAKE_AUTOMOC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick Core Qml)
+find_package(Qt6 REQUIRED COMPONENTS Quick Core Qml Core5Compat)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
@@ -34,4 +34,5 @@ target_link_libraries(${EXECUTABLE_NAME}
         Qt6::Quick
         Qt6::Core
         Qt6::Qml
+        Qt6::Core5Compat
 )

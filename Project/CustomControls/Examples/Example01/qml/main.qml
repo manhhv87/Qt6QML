@@ -1,5 +1,6 @@
 import QtQuick
-import Controls 1.0
+
+import Controls
 
 Window {
     width: 640
@@ -9,11 +10,12 @@ Window {
 
     CusButton_Blue {
         width: 120
-        height: 36
+        height: 35
         anchors.centerIn: parent
         text: "Hello"
+
         onClicked: {
-            console.log("hello TaoQuick")
+            console.log("Hello custom components")
         }
     }
 }

@@ -22,11 +22,9 @@ QtObject {
     property int scrollBarSize_Smaller: 5
     property int tipTextPixel: 12
 
-    property string imagePathPrefix: "file:///./../Images/"
+    property string imagePathPrefix: "qrc:/Controls/Images/"
     Component.onCompleted: {
-        if (typeof (taoQuickImportPath) != "undefined" && taoQuickImportPath !== null && taoQuickImportPath.length > 0) {
-            imagePathPrefix = taoQuickImportPath + "TaoQuick/Images/"
-        }
+        imagePathPrefix = "qrc:/Controls/Images/"
         currentTheme = 0
     }
 

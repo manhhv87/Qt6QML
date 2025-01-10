@@ -15,11 +15,13 @@ qt_standard_project_setup(REQUIRES 6.5)
 # Telling CMake location of our app .qrc file
 qt_add_resources(APP_RESOURCES ${CMAKE_CURRENT_LIST_DIR}/qml/app.qrc)
 qt_add_resources(CONTROL_RESOURCES ${CMAKE_SOURCE_DIR}/Controls/qml.qrc)
+qt_add_resources(IMAGE_RESOURCES ${CMAKE_CURRENT_LIST_DIR}/Image.qrc)
 
 qt_add_executable(${EXECUTABLE_NAME}
     main.cpp            
     ${APP_RESOURCES}
     ${CONTROL_RESOURCES}
+    ${IMAGE_RESOURCES}
 )
 
 target_compile_features(

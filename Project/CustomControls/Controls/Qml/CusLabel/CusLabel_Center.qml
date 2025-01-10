@@ -1,5 +1,5 @@
 import QtQuick 2.10
-import QtQuick.Controls 2.2
+import QtQuick.Controls.Basic 2.2
 
 Label {
     font.pixelSize: Config.fontSize_default
@@ -8,5 +8,5 @@ Label {
     elide: Text.ElideRight
     verticalAlignment: Text.AlignVCenter
     horizontalAlignment: Text.AlignHCenter
-//    renderType: Text.NativeRendering
+    // renderType: Text.NativeRendering
 }

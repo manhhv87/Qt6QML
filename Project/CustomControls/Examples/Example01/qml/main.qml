@@ -1,4 +1,5 @@
 import QtQuick
+import QtQuick.Controls.Basic 2.2
 
 import Controls 1.0
 
@@ -12,12 +13,14 @@ Window {
     readonly property color blueHover: "#40a9ff"
     readonly property color bluePressed: "#096dd9"
 
+    property string imgPath: "qrc:/Image/"
+
     Column {
         anchors.centerIn: parent
         spacing: 10
 
         CusLabel {
-            text: qsTr("General Button is consist of text, background and tooltip, it has normal, hover, pressed and disable states") + trans.transString
+            text: qsTr("General Button is consist of text, background and tooltip, it has normal, hover, pressed and disable states")
             wrapMode: Label.WordWrap
             width: 400
         }
@@ -52,7 +55,7 @@ Window {
         }
 
         CusLabel {
-            text: qsTr("Text Button has no background and border") + trans.transString
+            text: qsTr("Text Button has no background and border")
             wrapMode: Label.WordWrap
             width: 400
         }
@@ -93,7 +96,7 @@ Window {
         }
 
         CusLabel {
-            text: qsTr("Material Button has a gradiant background when clicked") + trans.transString
+            text: qsTr("Material Button has a gradiant background when clicked")
             wrapMode: Label.WordWrap
             width: 400
         }
@@ -113,7 +116,7 @@ Window {
         }
 
         CusLabel {
-            text: qsTr("Button can be design with different colors according to importance, example: blue for normal operation, red for delete operation and white for cancel operation") + trans.transString
+            text: qsTr("Button can be design with different colors according to importance, example: blue for normal operation, red for delete operation and white for cancel operation")
             wrapMode: Label.WordWrap
             width: 400
         }
@@ -196,7 +199,7 @@ Window {
         }
 
         CusLabel {
-            text: qsTr("General Button can be custom style, such as round background, icon background, icon text ans so on") + trans.transString
+            text: qsTr("General Button can be custom style, such as round background, icon background, icon text ans so on")
             wrapMode: Label.WordWrap
             width: 400
         }

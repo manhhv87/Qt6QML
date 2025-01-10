@@ -1,5 +1,5 @@
-import QtQuick 2.9
-import QtQuick.Controls 2.2
+import QtQuick 2.15
+import QtQuick.Controls.Basic 2.5
 
 import ".."
 import "../.."
@@ -47,8 +47,8 @@ Rectangle {
             verticalAlignment: Qt.AlignVCenter
             horizontalAlignment: Qt.AlignHCenter
             anchors.verticalCenter: parent.verticalCenter
-            validator: RegExpValidator{
-                regExp: /^(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])$/
+            validator: RegularExpressionValidator {
+                regularExpression: /^(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])$/
             }
             KeyNavigation.right: input2
             onTextChanged: {
@@ -75,8 +75,8 @@ Rectangle {
             verticalAlignment: Qt.AlignVCenter
             horizontalAlignment: Qt.AlignHCenter
             anchors.verticalCenter: parent.verticalCenter
-            validator: RegExpValidator{
-                regExp: /^(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])$/
+            validator: RegularExpressionValidator{
+                regularExpression: /^(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])$/
             }
             KeyNavigation.backtab: input1
             KeyNavigation.tab: input3
@@ -118,8 +118,8 @@ Rectangle {
             horizontalAlignment: Qt.AlignHCenter
             anchors.verticalCenter: parent.verticalCenter
 
-            validator: RegExpValidator{
-                regExp: /^(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])$/
+            validator: RegularExpressionValidator{
+                regularExpression: /^(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])$/
             }
             KeyNavigation.backtab: input2
             KeyNavigation.tab: input4
@@ -160,8 +160,8 @@ Rectangle {
             verticalAlignment: Qt.AlignVCenter
             horizontalAlignment: Qt.AlignHCenter
             anchors.verticalCenter: parent.verticalCenter
-            validator: RegExpValidator{
-                regExp: /^(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])$/
+            validator: RegularExpressionValidator{
+                regularExpression: /^(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])$/
             }
             KeyNavigation.backtab: input3
             KeyNavigation.left: input3

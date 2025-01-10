@@ -1,10 +1,10 @@
-import QtQuick 2.9
-import QtQuick.Controls.Basic 2.2
+import QtQuick 2.15
+import QtQuick.Controls.Basic 2.5
 
 import "../.."
 
 Button {
-    id: cusButtonImage
+    id: cusButton
     implicitWidth: 24
     implicitHeight: 24
 
@@ -20,11 +20,11 @@ Button {
     property string btnImgDisbaled
 
     property string btnImgUrl: {
-        if (!cusButtonImage.enabled) {
+        if (!cusButton.enabled) {
             return btnImgDisbaled
-        } else if (cusButtonImage.pressed || selected) {
+        } else if (cusButton.pressed || selected) {
             return btnImgPressed
-        } else if (cusButtonImage.hovered) {
+        } else if (cusButton.hovered) {
             return btnImgHovered
         } else {
             return btnImgNormal
@@ -32,19 +32,19 @@ Button {
     }
 
     background: Item {
-        width: cusButtonImage.width
-        height: cusButtonImage.height
+        width: cusButton.width
+        height: cusButton.height
 
         CusImage {
             id: backImage
-            source: btnImgUrl
+            source: cusButton.btnImgUrl
             anchors.centerIn: parent
         }
     }
 
     BasicTooltip {
         id: toolTip
-        visible: cusButtonImage.hovered && String(text).length
+        visible: cusButton.hovered && String(text).length
         delay: 500
     }
 

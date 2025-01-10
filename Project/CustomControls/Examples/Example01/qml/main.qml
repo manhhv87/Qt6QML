@@ -1,9 +1,10 @@
-import QtQuick
-import QtQuick.Controls.Basic 2.2
+import QtQuick 2.15
+import QtQuick.Controls.Basic 2.5
 
 import Controls 1.0
 
 Window {
+    id: root
     width: 1440
     height: 960
     visible: true
@@ -14,7 +15,9 @@ Window {
     readonly property color bluePressed: "#096dd9"
 
     property string imgPath: "qrc:/Image/"
+    property bool comboBoxHasValueRole: true
 
+    /* Some Button Controls */
     Column {
         anchors.centerIn: parent
         spacing: 10
@@ -208,17 +211,17 @@ Window {
             spacing: 20
 
             CusButton_Image {
-                btnImgNormal: imgPath + "Button/download_black.png"
-                btnImgHovered: imgPath + "Button/download_blue.png"
-                btnImgPressed: imgPath + "Button/download_red.png"
-                btnImgDisbaled: imgPath + "Button/download_gray.png"
+                btnImgNormal: root.imgPath + "Button/download_black.png"
+                btnImgHovered: root.imgPath + "Button/download_blue.png"
+                btnImgPressed: root.imgPath + "Button/download_red.png"
+                btnImgDisbaled: root.imgPath + "Button/download_gray.png"
                 tipText: "Download Button"
                 width: 36
                 height: 36
             }
 
             CusButton_ImageColorOverlay {
-                btnImgNormal: imgPath + "Button/download_black.png"
+                btnImgNormal: root.imgPath + "Button/download_black.png"
                 tipText: "Download Button Color Overlay"
                 width: 36
                 height: 36
@@ -236,7 +239,7 @@ Window {
                     radius: 2
 
                     CusImage {
-                        source: imgPath + "Button/download_white.png"
+                        source: root.imgPath + "Button/download_white.png"
                         anchors.centerIn: parent
                     }
                 }
@@ -254,7 +257,7 @@ Window {
                     color: backBtn2.pressed ? bluePressed: (backBtn2.hovered ? blueHover : blueNormal)
 
                     CusImage {
-                        source: imgPath + "Button/download_white.png"
+                        source: root.imgPath + "Button/download_white.png"
                         anchors.centerIn: parent
                     }
                 }
@@ -271,7 +274,7 @@ Window {
                     color: backBtn3.pressed ? bluePressed: (backBtn3.hovered ? blueHover : blueNormal)
                     radius: height / 2
                     CusImage {
-                        source: imgPath + "Button/download_white.png"
+                        source: root.imgPath + "Button/download_white.png"
                         anchors.centerIn: parent
                     }
                 }
@@ -290,7 +293,7 @@ Window {
                     radius: 2
 
                     CusImage {
-                        source: imgPath + "Button/expand.png"
+                        source: root.imgPath + "Button/expand.png"
                         anchors.centerIn: parent
                         rotation: backBtn3_1.isDownload ? 180 : 0
                         Behavior on rotation { NumberAnimation { duration: 300}}
@@ -317,7 +320,7 @@ Window {
                         anchors.centerIn: parent
 
                         CusImage {
-                            source: imgPath + "Button/download_white.png"
+                            source: root.imgPath + "Button/download_white.png"
                             anchors.verticalCenter: parent.verticalCenter
                         }
 
@@ -345,7 +348,7 @@ Window {
                         anchors.centerIn: parent
 
                         CusImage {
-                            source: imgPath + "Button/download_white.png"
+                            source: root.imgPath + "Button/download_white.png"
                             anchors.verticalCenter: parent.verticalCenter
                         }
 
@@ -359,4 +362,199 @@ Window {
             }
         }
     }
+
+    /* Data entry Controls */
+    // Item {
+    //     anchors.fill: parent
+
+    //     Column {
+    //         anchors.centerIn: parent
+    //         spacing: 10
+
+    //         CusLabel {
+    //             text: qsTr("CheckBox")
+    //             wrapMode: Label.WordWrap
+    //             width: 400
+    //         }
+
+    //         Row {
+    //             spacing: 10
+
+    //             CusCheckBox {
+    //                 text: "unchecked"
+    //             }
+
+    //             CusCheckBox {
+    //                 checked: true
+    //                 text: "checked"
+    //             }
+
+    //             CusCheckBox {
+    //                 enabled: false
+    //                 text: "disable"
+    //             }
+
+    //             CusCheckBox {
+    //                 enabled: false
+    //                 checked: true
+    //                 text: "disable & checked"
+    //             }
+    //         }
+
+    //         Item {
+    //             width: 20
+    //             height: 30
+    //         }
+
+    //         CusLabel {
+    //             text: qsTr("Switch")
+    //             wrapMode: Label.WordWrap
+    //             width: 400
+    //         }
+
+    //         Row {
+    //             spacing: 10
+
+    //             CusSwitch {}
+
+    //             CusSwitch {
+    //                 checked: true
+    //             }
+    //         }
+
+    //         Item {
+    //             width: 20
+    //             height: 30
+    //         }
+
+    //         CusLabel {
+    //             text: qsTr("ComboBox")
+    //             wrapMode: Label.WordWrap
+    //             width: 400
+    //         }
+
+    //         Row {
+    //             spacing: 10
+
+    //             CusComboBox {
+    //                 model: 10
+    //                 width: 120
+    //                 displayText: qsTr(currentText)
+    //             }
+
+    //             CusComboBox {
+    //                 model: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    //                 width: 120
+    //                 displayText: qsTr(currentText)
+    //             }
+
+    //             CusComboBox {
+    //                 id: comboBox3
+    //                 width: 120
+    //                 height: 30
+    //                 textRole: "name"
+    //                 font.pixelSize: 10
+    //                 model: holdersType
+
+    //                 Component.onCompleted: {
+    //                     if(root.comboBoxHasValueRole) {
+    //                         valueRole = "cost"
+    //                     }
+    //                 }
+    //             }
+
+    //             ListModel {
+    //                 id: holdersType
+
+    //                 ListElement {
+    //                     name: "Apple"
+    //                     cost: 2.45
+    //                 }
+
+    //                 ListElement {
+    //                     name: "Orange"
+    //                     cost: 3.25
+    //                 }
+
+    //                 ListElement {
+    //                     name: "Banana"
+    //                     cost: 1.95
+    //                 }
+    //             }
+    //         }
+
+    //         Item {
+    //             width: 20
+    //             height: 30
+    //         }
+
+    //         CusLabel {
+    //             text: qsTr("Slider")
+    //             wrapMode: Label.WordWrap
+    //             width: 400
+    //         }
+
+    //         Row {
+    //             spacing: 10
+
+    //             CusSlider {
+    //                 width: 200
+    //                 from: 0
+    //                 to: 200
+    //             }
+
+    //             CusSlider_Spin {
+    //                 width: 200
+    //                 from: 0
+    //                 to: 100
+    //             }
+
+    //         }
+
+    //         CusSpinBox_HourMinute {
+    //             width: 200
+    //         }
+
+    //         Item {
+    //             width: 20
+    //             height: 30
+    //         }
+
+    //         CusLabel {
+    //             text: qsTr("TextInput")
+    //             wrapMode: Label.WordWrap
+    //             width: 400
+    //         }
+
+    //         Row {
+    //             spacing: 10
+
+    //             CusTextField {
+    //                 width: 200
+    //             }
+
+    //             CusTextField_Search {
+    //                 width: 200
+    //             }
+    //         }
+
+    //         CusLabel {
+    //             text: qsTr("IPv4")
+    //             wrapMode: Label.WordWrap
+    //             width: 400
+    //         }
+
+    //         CusIPAddress {
+    //             id: ip
+
+    //             Component.onCompleted: {
+    //                 inputIP("192.168.1.1")
+    //             }
+    //         }
+
+    //         CusLabel {
+    //             text: "IP Addr: " + (ip.isValid ? ip.ipAddr : "")
+    //         }
+    //     }
+    // }
 }

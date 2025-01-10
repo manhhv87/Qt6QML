@@ -1,12 +1,11 @@
-import QtQuick 2.9
-import QtQuick.Controls 2.2
+import QtQuick 2.15
+import QtQuick.Controls.Basic 2.5
 
 import ".."
 import "../.."
 
 RadioButton {
-    id: cusRadioButton
-
+    id: cusButton
     implicitHeight: CusConfig.fixedHeight
     implicitWidth: 200
 
@@ -43,25 +42,25 @@ RadioButton {
         }
     }
 
-    property color textColor: cusRadioButton.enabled ? CusConfig.textColor : CusConfig.textColor_disabled
+    property color textColor: cusButton.enabled ? CusConfig.textColor : CusConfig.textColor_disabled
 
     indicator: CusImage {
-        x: cusRadioButton.leftPadding
-        source: btnImgUr
-        y: (cusRadioButton.height - height) /2
+        x: cusButton.leftPadding
+        source: cusButton.btnImgUr
+        y: (cusButton.height - height) /2
     }
 
     contentItem: BasicText {
-        height: cusRadioButton.height
-        leftPadding: cusRadioButton.leftPadding + cusRadioButton.indicator.width + cusRadioButton.spacing
-        text: cusRadioButton.text
-        color: cusRadioButton.textColor
+        height: cusButton.height
+        leftPadding: cusButton.leftPadding + cusButton.indicator.width + cusButton.spacing
+        text: cusButton.text
+        color: cusButton.textColor
         horizontalAlignment: Text.AlignLeft
     }
 
     BasicTooltip {
         id: toolTip
-        visible: cusRadioButton.hovered && String(text).length
+        visible: cusButton.hovered && String(text).length
     }
 
     TransArea {}

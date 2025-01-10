@@ -1,9 +1,10 @@
-import QtQuick 2.9
+import QtQuick 2.15
 
 import "../Basic"
 import "../CusImage"
 
 RoundRectangle {
+    id: cusButton
     width: 30
     height: 30
 
@@ -71,36 +72,36 @@ RoundRectangle {
         anchors.centerIn: parent
         sourceSize.width: 24
         sourceSize.height: 24
-        source: icon
+        source: cusButton.icon
     }
 
     Rectangle {
-        visible: showSplitLineLast
+        visible: cusButton.showSplitLineLast
         width: 1
         height: parent.height * 0.8
         anchors {
             left: parent.left
             verticalCenter: parent.verticalCenter
         }
-        color: splitLineColor
+        color: cusButton.splitLineColor
     }
 
     Rectangle {
-        visible: showSplitLineNext
+        visible: cusButton.showSplitLineNext
         width: 1
         height: parent.height * 0.8
         anchors {
             right: parent.right
             verticalCenter: parent.verticalCenter
         }
-        color: splitLineColor
+        color: cusButton.splitLineColor
     }
 
     TransArea {
         id: trans
         anchors.fill: parent
         onPressed: {
-            click()
+            cusButton.click()
         }
     }
 }

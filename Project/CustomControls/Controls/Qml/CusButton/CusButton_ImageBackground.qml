@@ -1,10 +1,10 @@
-import QtQuick 2.10
-import QtQuick.Controls 2.2
+import QtQuick 2.15
+import QtQuick.Controls.Basic 2.5
 
 import "../.."
 
 Button {
-    id: cusButtonImage
+    id: cusButton
 
     property alias tipText: toolTip.text
     property alias tipItem: toolTip
@@ -19,18 +19,19 @@ Button {
 
     BasicTooltip {
         id: toolTip
-        visible: cusButtonImage.hovered && String(text).length
+        visible: cusButton.hovered && String(text).length
     }
 
     background: Rectangle {
-        width: cusButtonImage.width
-        height: cusButtonImage.height
-        color: cusButtonImage.pressed ? backgroundColor_pressed : ( cusButtonImage.hovered ? backgroundColor_hovered : backgroundColor)
+        width: cusButton.width
+        height: cusButton.height
+        color: cusButton.pressed ? cusButton.backgroundColor_pressed : ( cusButton.hovered ? cusButton.backgroundColor_hovered : cusButton.backgroundColor)
+
         CusImage {
             anchors.centerIn: parent
-            width: cusButtonImage.width
-            height: cusButtonImage.height
-            source: btnImgUr
+            width: cusButton.width
+            height: cusButton.height
+            source: cusButton.btnImgUr
         }
     }
 

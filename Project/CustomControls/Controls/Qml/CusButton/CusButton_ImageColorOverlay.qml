@@ -1,13 +1,13 @@
-import QtQml 2.0
-import QtQuick 2.9
-import QtQuick.Controls.Basic 2.2
+import QtQml 2.5
+import QtQuick 2.15
+import QtQuick.Controls.Basic 2.5
 import Qt5Compat.GraphicalEffects
 
 import ".."
 import "../.."
 
 Button {
-    id: cusButtonImage
+    id: cusButton
     implicitWidth: 30
     implicitHeight: 30
 
@@ -31,16 +31,16 @@ Button {
 
     CusImage {
         id: baseImage
-        source: btnImgNormal
+        source: cusButton.btnImgNormal
         smooth: true
         visible: false
     }
 
     background: Rectangle {
-        width: cusButtonImage.width
-        height: cusButtonImage.height
+        width: cusButton.width
+        height: cusButton.height
         radius: CusConfig.controlBorderRadius
-        color: backgroundColor
+        color: cusButton.backgroundColor
 
         ColorOverlay {
             source: baseImage
@@ -49,14 +49,14 @@ Button {
             anchors.centerIn: parent
             cached: true
             color: {
-                if (!cusButtonImage.enabled) {
-                    return colorDisable
-                } else if (cusButtonImage.pressed || selected) {
-                    return colorPressed
-                } else if (cusButtonImage.hovered) {
-                    return colorHovered
+                if (!cusButton.enabled) {
+                    return cusButton.colorDisable
+                } else if (cusButton.pressed || cusButton.selected) {
+                    return cusButton.colorPressed
+                } else if (cusButton.hovered) {
+                    return cusButton.colorHovered
                 } else {
-                    return colorNormal
+                    return cusButton.colorNormal
                 }
             }
         }
@@ -64,7 +64,7 @@ Button {
 
     BasicTooltip {
         id: toolTip
-        visible: cusButtonImage.hovered && String(text).length
+        visible: cusButton.hovered && String(text).length
         delay: 500
     }
 

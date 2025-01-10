@@ -1,4 +1,4 @@
-import QtQuick 2.9
+import QtQuick 2.15
 
 import "../.."
 
@@ -23,7 +23,7 @@ CusButton {
             width: radius * 2
             height: radius * 2
             visible: radius > 0
-            color: backgroundColorPressed
+            color: cusButton.backgroundColorPressed
 
             SequentialAnimation {
                 id: pressAnimation

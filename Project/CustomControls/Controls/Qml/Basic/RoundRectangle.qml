@@ -1,4 +1,4 @@
-import QtQuick 2.9
+import QtQuick 2.15
 
 // Rectangle simulates a rounded rectangle. It does not depend on other modules
 // and can be used in basic Qt versions.

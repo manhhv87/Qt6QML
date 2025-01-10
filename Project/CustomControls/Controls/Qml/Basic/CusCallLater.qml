@@ -1,8 +1,9 @@
-import QtQuick 2.12
+import QtQuick 2.15
 
 Item {
     Component {
         id: timerComp
+
         Timer {
             id: timer
             repeat: false

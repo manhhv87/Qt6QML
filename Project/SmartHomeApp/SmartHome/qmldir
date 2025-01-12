@@ -1,0 +1,24 @@
+module SmartHome
+CCTVTile 1.0 Qml/CCTVTile.qml
+CircularSlider 1.0 Qml/CircularSlider.qml
+EffectButton 1.0 Qml/EffectButton.qml
+IconImage 1.0 Qml/IconImage.qml
+IconLabel 1.0 Qml/IconLabel.qml
+LeftPane 1.0 Qml/LeftPane.qml
+LightingTile 1.0 Qml/LightingTile.qml
+MiddlePane 1.0 Qml/MiddlePane.qml
+MiddlePaneWidget 1.0 Qml/MiddlePaneWidget.qml
+OutlinedLabel 1.0 Qml/OutlinedLabel.qml
+PrefsCircularProgressBar 1.0 Qml/PrefsCircularProgressBar.qml
+PrefsLabel 1.0 Qml/PrefsLabel.qml
+PrefsLabelSelector 1.0 Qml/PrefsLabelSelector.qml
+PrefsProgressBar 1.0 Qml/PrefsProgressBar.qml
+PrefsSlider 1.0 Qml/PrefsSlider.qml
+PrefsSwitch 1.0 Qml/PrefsSwitch.qml
+PrefsTabButton 1.0 Qml/PrefsTabButton.qml
+RightPane 1.0 Qml/RightPane.qml
+RightPaneLightSwitchComponent 1.0 Qml/RightPaneLightSwitchComponent.qml
+Tile 1.0 Qml/Tile.qml
+TimeShow 1.0 Qml/TimeShow.qml
+WizardStepper 1.0 Qml/WizardStepper.qml
+singleton Style 1.0 Qml/Style.qml

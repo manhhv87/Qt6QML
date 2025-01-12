@@ -1,0 +1,8 @@
+C:/Users/manhh/Qt6QML/Project/SmartHomeApp/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/manhh/Qt6QML/Project/SmartHomeApp/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/manhh/Qt6QML/Project/SmartHomeApp/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/GUI/CMakeFiles/GUI.dir
+C:/Users/manhh/Qt6QML/Project/SmartHomeApp/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/GUI/CMakeFiles/GUI_qmlimportscan.dir
+C:/Users/manhh/Qt6QML/Project/SmartHomeApp/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/GUI/CMakeFiles/edit_cache.dir
+C:/Users/manhh/Qt6QML/Project/SmartHomeApp/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/GUI/CMakeFiles/rebuild_cache.dir
+C:/Users/manhh/Qt6QML/Project/SmartHomeApp/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/GUI/CMakeFiles/GUI_autogen_timestamp_deps.dir
+C:/Users/manhh/Qt6QML/Project/SmartHomeApp/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/GUI/CMakeFiles/GUI_autogen.dir

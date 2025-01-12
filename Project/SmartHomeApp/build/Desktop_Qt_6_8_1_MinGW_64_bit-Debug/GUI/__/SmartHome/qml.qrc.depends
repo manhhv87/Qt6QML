@@ -1,0 +1,57 @@
+<RCC>
+    <qresource prefix="/SmartHome">
+        <file>Images/brasero.svg</file>
+        <file>Images/brave-browser.svg</file>
+        <file>Images/check-solid.svg</file>
+        <file>Images/Cover.png</file>
+        <file>Images/fan-solid.svg</file>
+        <file>Images/itunes.svg</file>
+        <file>Images/light1.png</file>
+        <file>Images/light2.png</file>
+        <file>Images/reload.svg</file>
+        <file>Images/spotify-client.svg</file>
+        <file>Images/system-run.svg</file>
+        <file>Images/wrench.svg</file>
+        <file>Images/youtube.svg</file>
+        <file>Images/youtube-to-mp3.svg</file>
+        <file>Images/🦆 icon _flash_.svg</file>
+        <file>Images/icons/fault.svg</file>
+        <file>Images/icons/faultindi.svg</file>
+        <file>Images/icons/sliderToolTip.svg</file>
+        <file>Images/others/Ellipse 44.png</file>
+        <file>Images/others/Ellipse 45.png</file>
+        <file>Images/others/Ellipse 46.png</file>
+        <file>Images/others/Ellipse 47.png</file>
+        <file>Images/others/Subtract.png</file>
+        <file>Images/others/Subtract.svg</file>
+        <file>Qml/CCTVTile.qml</file>
+        <file>Qml/CircularSlider.qml</file>
+        <file>Qml/EffectButton.qml</file>
+        <file>Qml/IconImage.qml</file>
+        <file>Qml/IconLabel.qml</file>
+        <file>Qml/LeftPane.qml</file>
+        <file>Qml/LightingTile.qml</file>
+        <file>Qml/MiddlePane.qml</file>
+        <file>Qml/MiddlePaneWidget.qml</file>
+        <file>Qml/OutlinedLabel.qml</file>
+        <file>Qml/PrefsCircularProgressBar.qml</file>
+        <file>Qml/PrefsLabel.qml</file>
+        <file>Qml/PrefsLabelSelector.qml</file>
+        <file>Qml/PrefsProgressBar.qml</file>
+        <file>Qml/PrefsSlider.qml</file>
+        <file>Qml/PrefsSwitch.qml</file>
+        <file>Qml/PrefsTabButton.qml</file>
+        <file>Qml/RightPane.qml</file>
+        <file>Qml/RightPaneLightSwitchComponent.qml</file>
+        <file>Qml/Style.qml</file>
+        <file>Qml/Tile.qml</file>
+        <file>Qml/TimeShow.qml</file>
+        <file>Qml/WizardStepper.qml</file>
+        <file>qmldir</file>
+        <file>Fonts/CodecPro-Italic.ttf</file>
+        <file>Fonts/CodecPro-Regular.ttf</file>
+        <file>Fonts/fontawesome.otf</file>
+        <file>Fonts/Lato-Bold.ttf</file>
+        <file>Fonts/Lato-Regular.ttf</file>
+    </qresource>
+</RCC>

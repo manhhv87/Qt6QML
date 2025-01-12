@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.16)
+
+set(EXECUTABLE_NAME "SmartHomeApp")
+
+project (${EXECUTABLE_NAME} VERSION 0.1 LANGUAGES CXX)
+
+find_package(Qt6 REQUIRED COMPONENTS Quick)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+
+add_subdirectory(GUI)

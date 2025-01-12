@@ -258,15 +258,15 @@ ApplicationWindow {
             case 1:
                 screenLoader.sourceComponent = home
                 break;
-            case 2:
-                screenLoader.sourceComponent = kitchen
-                break;
-            case 3:
-                screenLoader.sourceComponent = bedroom
-                break;
-            case 4:
-                screenLoader.sourceComponent = laundary
-                break;
+            // case 2:
+            //     screenLoader.sourceComponent = kitchen
+            //     break;
+            // case 3:
+            //     screenLoader.sourceComponent = bedroom
+            //     break;
+            // case 4:
+            //     screenLoader.sourceComponent = laundary
+            //     break;
             default:
         }
     }

@@ -512,6 +512,7 @@ GUI_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
+	C:/Users/manhh/Qt6QML/Project/SmartHomeApp/Components/qml.qrc \
 	C:/Users/manhh/Qt6QML/Project/SmartHomeApp/GUI/CMakeLists.txt \
 	C:/Users/manhh/Qt6QML/Project/SmartHomeApp/GUI/Qml/app.qrc \
 	C:/Users/manhh/Qt6QML/Project/SmartHomeApp/GUI/application.cpp \
@@ -519,7 +520,6 @@ GUI_autogen/timestamp: \
 	C:/Users/manhh/Qt6QML/Project/SmartHomeApp/GUI/fpstext.cpp \
 	C:/Users/manhh/Qt6QML/Project/SmartHomeApp/GUI/fpstext.h \
 	C:/Users/manhh/Qt6QML/Project/SmartHomeApp/GUI/main.cpp \
-	C:/Users/manhh/Qt6QML/Project/SmartHomeApp/SmartHome/qml.qrc \
 	C:/Users/manhh/Qt6QML/Project/SmartHomeApp/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	C:/Users/manhh/Qt6QML/Project/SmartHomeApp/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/GUI/.qt/qml_imports/GUI_conf.cmake \
 	C:/Users/manhh/Qt6QML/Project/SmartHomeApp/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/GUI/GUI_autogen/moc_predefs.h \

@@ -67,7 +67,7 @@
 		"C:/Qt/6.8.1/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatVersionlessAliasTargets.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.29/Modules/GNUInstallDirs.cmake",
 		"C:/Users/manhh/Qt6QML/Project/SmartHomeApp/GUI/Qml/app.qrc",
-		"C:/Users/manhh/Qt6QML/Project/SmartHomeApp/SmartHome/qml.qrc",
+		"C:/Users/manhh/Qt6QML/Project/SmartHomeApp/Components/qml.qrc",
 		"C:/Users/manhh/Qt6QML/Project/SmartHomeApp/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/GUI/.qt/qml_imports/GUI_conf.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/manhh/Qt6QML/Project/SmartHomeApp",

@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
 
-    QFontDatabase::addApplicationFont("qrc:/SmartHome/Fonts/Lato-Regular.ttf");
+    QFontDatabase::addApplicationFont(":/SmartHome/Fonts/Lato-Regular.ttf");
     QFont font("Lato");
     font.setPointSize(16);
     QGuiApplication::setFont(font);

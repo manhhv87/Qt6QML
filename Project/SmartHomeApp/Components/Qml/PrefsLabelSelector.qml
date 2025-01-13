@@ -111,7 +111,11 @@ Pane{
                         // spacing: labelIndicator.spacing
                         // mirrored: labelIndicator.mirrored
                         // display: labelIndicator.display
+<<<<<<< HEAD
                         // icon: labelIndicator.icon
+=======
+                        icon: labelIndicator.icon
+>>>>>>> 16d3e44a7dcd16bd3ec27412e3a2b136a1e36860
                         text: modelData
                         font: labelIndicator.font
                         color: "#000000"

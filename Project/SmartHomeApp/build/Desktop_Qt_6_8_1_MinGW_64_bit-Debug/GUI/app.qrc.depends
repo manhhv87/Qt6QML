@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/MainPages">
+        <file>Qml/main.qml</file>
+        <file>Qml/models/CCTVModel.qml</file>
+        <file>Qml/models/LightingModel.qml</file>
+        <file>Qml/models/RoomModel.qml</file>
+        <file>Qml/screens/AirConditioner.qml</file>
+        <file>Qml/screens/Applications.qml</file>
+        <file>Qml/screens/Bedroom.qml</file>
+        <file>Qml/screens/CCTV.qml</file>
+        <file>Qml/screens/Communications.qml</file>
+        <file>Qml/screens/Dashboard.qml</file>
+        <file alias="Home.qml">Qml/screens/Home.qml</file>
+        <file>Qml/screens/Kitchen.qml</file>
+        <file>Qml/screens/Laundary.qml</file>
+        <file>Qml/screens/Lighting.qml</file>
+        <file>Qml/screens/Security.qml</file>
+        <file>Qml/screens/Settings.qml</file>
+        <file>Qml/MainArea.qml</file>
+    </qresource>
+</RCC>

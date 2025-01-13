@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "GUI",
+					"jsonFile" : "directory-GUI-Debug-ce8d70de2e8500e1db72.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "GUI",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SmartHomeApp"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "GUI",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "GUI::@0e4c3e8d74fe2080f54e",
+					"jsonFile" : "target-GUI-Debug-3ab173397ebc82a46f18.json",
+					"name" : "GUI",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "GUI_autogen::@0e4c3e8d74fe2080f54e",
+					"jsonFile" : "target-GUI_autogen-Debug-537119bbb1eb691fda4c.json",
+					"name" : "GUI_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "GUI_autogen_timestamp_deps::@0e4c3e8d74fe2080f54e",
+					"jsonFile" : "target-GUI_autogen_timestamp_deps-Debug-f489815cee6521a72672.json",
+					"name" : "GUI_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "GUI_qmlimportscan::@0e4c3e8d74fe2080f54e",
+					"jsonFile" : "target-GUI_qmlimportscan-Debug-b0c6ae65800aeefbd1e1.json",
+					"name" : "GUI_qmlimportscan",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/manhh/Qt6QML/Project/SmartHomeApp/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/manhh/Qt6QML/Project/SmartHomeApp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

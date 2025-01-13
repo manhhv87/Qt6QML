@@ -3,7 +3,7 @@ import QtQuick.Controls
 import SmartHome 1.0
 
 Pane {
-    id:root
+    id: root
 
     property string source: "qrc:/SmartHome/Images/others/Ellipse 46.png"
     property string title

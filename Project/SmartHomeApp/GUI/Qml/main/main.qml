@@ -4,9 +4,9 @@ import QtQuick.Layouts
 import QtQuick.Controls 2.3
 import SmartHome 1.0
 
-// import "../SmartHome"
-import "../screens"
+import "./"
 import "../models"
+import "../screens"
 
 ApplicationWindow {
     id: root
@@ -99,11 +99,10 @@ ApplicationWindow {
     background: Image {
         anchors.fill: parent
         source: "qrc:/SmartHome/Images/Cover.png"
-        //fillMode: Image.PreserveAspectFit
 
-        // FPSText {
-        //     id: fps_text
-        // }
+        FPSText {
+            id: fps_text
+        }
     }
 
     property ListModel roomsModel: RoomModel{}
@@ -189,7 +188,7 @@ ApplicationWindow {
                                         id: iconlabel
                                         width: parent.height * 0.5
                                         height: width
-                                        color: Style.textColor
+                                        color: textColor
                                         topPadding: 10
                                         anchors.horizontalCenter: parent.horizontalCenter
                                         horizontalAlignment: IconLabel.AlignHCenter
@@ -204,7 +203,7 @@ ApplicationWindow {
                                     Text {
                                         text: roomdelegateitem.label
                                         font.pixelSize: 12
-                                        color: Style.textColor
+                                        color: textColor
                                         anchors.horizontalCenter: parent.horizontalCenter
                                         opacity: roomdelegateitem.isActive ? 1 : 0.5
 

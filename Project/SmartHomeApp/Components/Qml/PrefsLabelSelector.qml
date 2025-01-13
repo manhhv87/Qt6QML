@@ -108,9 +108,9 @@ Pane{
                     font.bold: Font.DemiBold
 
                     contentItem: IconLabel {
-                        spacing: labelIndicator.spacing
-                        mirrored: labelIndicator.mirrored
-                        display: labelIndicator.display
+                        // spacing: labelIndicator.spacing
+                        // mirrored: labelIndicator.mirrored
+                        // display: labelIndicator.display
                         icon: labelIndicator.icon
                         text: modelData
                         font: labelIndicator.font

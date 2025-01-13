@@ -6,8 +6,6 @@ import QtQuick.Controls
 import Qt5Compat.GraphicalEffects
 import SmartHome 1.0
 
-import "../Qml"
-
 TabButton{
     id: control
     property string textIcon

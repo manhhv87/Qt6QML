@@ -3,6 +3,7 @@ import QtQuick 2.15
 import QtQuick.Window 2.15
 import QtQuick.Layouts
 import QtQuick.Controls
+import QtQuick.Controls.impl
 import Qt5Compat.GraphicalEffects
 import SmartHome 1.0
 

@@ -2,7 +2,6 @@ import QtQuick 2.15
 import QtQuick.Window 2.15
 import QtQuick.Layouts
 import QtQuick.Controls 2.3
-import Qt5Compat.GraphicalEffects
 import SmartHome 1.0
 
 // import "../SmartHome"
@@ -258,15 +257,15 @@ ApplicationWindow {
             case 1:
                 screenLoader.sourceComponent = home
                 break;
-            // case 2:
-            //     screenLoader.sourceComponent = kitchen
-            //     break;
-            // case 3:
-            //     screenLoader.sourceComponent = bedroom
-            //     break;
-            // case 4:
-            //     screenLoader.sourceComponent = laundary
-            //     break;
+            case 2:
+                screenLoader.sourceComponent = kitchen
+                break;
+            case 3:
+                screenLoader.sourceComponent = bedroom
+                break;
+            case 4:
+                screenLoader.sourceComponent = laundary
+                break;
             default:
         }
     }
@@ -281,18 +280,18 @@ ApplicationWindow {
         Home {}
     }
 
-    // Component {
-    //     id: kitchen
-    //     Kitchen {}
-    // }
+    Component {
+        id: kitchen
+        Kitchen {}
+    }
 
-    // Component {
-    //     id: bedroom
-    //     Bedroom {}
-    // }
+    Component {
+        id: bedroom
+        Bedroom {}
+    }
 
-    // Component {
-    //     id: laundary
-    //     Laundary {}
-    // }
+    Component {
+        id: laundary
+        Laundary {}
+    }
 }

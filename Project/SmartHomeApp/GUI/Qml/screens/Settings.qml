@@ -5,8 +5,6 @@ import QtQuick.Controls
 import Qt5Compat.GraphicalEffects
 import SmartHome 1.0
 
-import "../../../SmartHome"
-
 Pane {
     padding: 0
     background: Rectangle {

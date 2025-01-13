@@ -237,14 +237,14 @@ Page {
                         anchors.centerIn: parent
                         Image {
                             Layout.alignment: Qt.AlignHCenter
-                            source: "qrc:/Images/icons/fault.svg"
+                            source: "qrc:/SmartHome/Images/icons/fault.svg"
                             sourceSize: Qt.size(32,32)
                         }
 
                         Image {
                             Layout.alignment: Qt.AlignHCenter
                             sourceSize: Qt.size(22,22)
-                            source: "qrc:/Images/icons/faultindi.svg"
+                            source: "qrc:/SmartHome/Images/icons/faultindi.svg"
                         }
                     }
                 }

@@ -5,8 +5,6 @@ import QtQuick.Controls
 import Qt5Compat.GraphicalEffects
 import SmartHome 1.0
 
-import "../SmartHome"
-
 Pane {
     id: securityTile
     padding: 0
@@ -88,12 +86,12 @@ Pane {
             spacing: 10
             Image {
                 Layout.alignment: Qt.AlignHCenter
-                source: "qrc:/Images/icons/fault.svg"
+                source: "qrc:/SmartHome/Images/icons/fault.svg"
             }
 
             Image {
                 Layout.alignment: Qt.AlignHCenter
-                source: "qrc:/Images/icons/faultindi.svg"
+                source: "qrc:/SmartHome/Images/icons/faultindi.svg"
             }
         }
     }
@@ -138,7 +136,7 @@ Pane {
             iconBackground: "#00FF19"
             roundIcon: true
             checkable: true
-            setIcon:"qrc:/Images/wrench.svg"
+            setIcon:"qrc:/SmartHome/Images/wrench.svg"
             onClicked: {}
         }
 
@@ -151,7 +149,7 @@ Pane {
             iconBackground: "#FFB800"
             roundIcon: true
             checkable: true
-            setIcon:"qrc:/Images/reload.svg"
+            setIcon:"qrc:/SmartHome/Images/reload.svg"
             onClicked: {}
         }
 
@@ -162,7 +160,7 @@ Pane {
             iconBackground: "#FF0000"
             roundIcon: true
             checkable: true
-            setIcon:"qrc:/Images/🦆 icon _flash_.svg"
+            setIcon:"qrc:/SmartHome/Images/🦆 icon _flash_.svg"
             onClicked: {}
         }
     }

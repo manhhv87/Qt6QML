@@ -20,7 +20,7 @@ Rectangle {
     width: 160
     height: 160
     radius: 14
-    color: alphaColor("#000000",0.5)
+    color: Style.alphaColor("#000000",0.5)
 
     Rectangle{
         anchors.top: parent.top
@@ -28,7 +28,7 @@ Rectangle {
         anchors.left: parent.left
         anchors.leftMargin: 10
         visible: control.on
-        color: granite
+        color: Style.granite
         width: contentLive.implicitWidth + 10
         height: 16
         radius: 8
@@ -46,7 +46,7 @@ Rectangle {
             Text {
                 text: "Live"
                 font.pixelSize: 8
-                color: alphaColor("#000000",0.6)
+                color: Style.alphaColor("#000000",0.6)
             }
         }
     }
@@ -96,12 +96,12 @@ Rectangle {
         Text {
             text: control.subTitle
             font.pixelSize: 12
-            color: alphaColor("#FFFFFF",0.9)
+            color: Style.alphaColor("#FFFFFF",0.9)
         }
 
         Rectangle{
             visible: !control.on
-            color: granite
+            color: Style.granite
             implicitWidth: content.implicitWidth + 10
             implicitHeight: 18
             radius: 8
@@ -111,12 +111,12 @@ Rectangle {
                 IconLabel {
                     size: 8
                     icon: control.icon
-                    color: alphaColor("#000000",0.6)
+                    color: Style.alphaColor("#000000",0.6)
                 }
                 Text {
                     text: control.tag
                     font.pixelSize: 8
-                    color: alphaColor("#000000",0.6)
+                    color: Style.alphaColor("#000000",0.6)
                 }
             }
         }

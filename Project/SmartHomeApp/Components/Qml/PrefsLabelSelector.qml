@@ -1,6 +1,6 @@
 import QtQuick
 import QtQuick.Layouts
-import QtQuick.Controls
+import QtQuick.Controls.Basic
 import QtQuick.Controls.impl
 import SmartHome 1.0
 
@@ -108,10 +108,10 @@ Pane{
                     font.bold: Font.DemiBold
 
                     contentItem: IconLabel {
-                        spacing: labelIndicator.spacing
-                        mirrored: labelIndicator.mirrored
-                        display: labelIndicator.display
-                        icon: labelIndicator.icon
+                        // spacing: labelIndicator.spacing
+                        // mirrored: labelIndicator.mirrored
+                        // display: labelIndicator.display
+                        // icon: labelIndicator.icon
                         text: modelData
                         font: labelIndicator.font
                         color: "#000000"

@@ -14,13 +14,20 @@ int main(int argc, char *argv[])
 #endif
 
     QGuiApplication app(argc, argv);
+
+    int latoID = QFontDatabase::addApplicationFont(":/SmartHome/Fonts/Lato-Regular.ttf");
+    QStringList loadedFontFamilies = QFontDatabase::applicationFontFamilies(latoID);
+    if (!loadedFontFamilies.empty()) {
+        QString fontName = loadedFontFamilies.at(0);
+        QGuiApplication::setFont(QFont(fontName));
+    } else {
+        qWarning("Error: fail to load Lato font");
+    }
+
+    Application *_app = new Application();
+    Q_UNUSED(_app)
+
     QQmlApplicationEngine engine;
-
-    QFontDatabase::addApplicationFont(":/SmartHome/Fonts/Lato-Regular.ttf");
-    QFont font("Lato");
-    font.setPointSize(16);
-    QGuiApplication::setFont(font);
-
     engine.addImportPath(QStringLiteral("qrc:/"));  // Install SmartHome modules
 
     const QUrl url(QStringLiteral("qrc:/main/main.qml"));

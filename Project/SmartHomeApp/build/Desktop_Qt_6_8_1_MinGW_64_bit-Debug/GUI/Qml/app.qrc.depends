@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
+        <file>main/main.qml</file>
+        <file>main/MainArea.qml</file>
         <file>models/CCTVModel.qml</file>
         <file>models/LightingModel.qml</file>
         <file>models/RoomModel.qml</file>
@@ -10,12 +12,10 @@
         <file>screens/Communications.qml</file>
         <file>screens/Dashboard.qml</file>
         <file>screens/Home.qml</file>
-        <file>screens/Kitchen.qml</file>
         <file>screens/Laundary.qml</file>
         <file>screens/Lighting.qml</file>
         <file>screens/Security.qml</file>
         <file>screens/Settings.qml</file>
-        <file>main/main.qml</file>
-        <file>main/MainArea.qml</file>
+        <file>screens/Kitchen.qml</file>
     </qresource>
 </RCC>

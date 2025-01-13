@@ -21,4 +21,3 @@ RightPaneLightSwitchComponent 1.0 Qml/RightPaneLightSwitchComponent.qml
 Tile 1.0 Qml/Tile.qml
 TimeShow 1.0 Qml/TimeShow.qml
 WizardStepper 1.0 Qml/WizardStepper.qml
-singleton Style 1.0 Qml/Style.qml

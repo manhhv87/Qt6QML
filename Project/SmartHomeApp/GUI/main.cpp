@@ -14,13 +14,17 @@ int main(int argc, char *argv[])
 #endif
 
     QGuiApplication app(argc, argv);
-    QQmlApplicationEngine engine;
+    QQuickStyle::setStyle("Basic");
 
     QFontDatabase::addApplicationFont(":/SmartHome/Fonts/Lato-Regular.ttf");
     QFont font("Lato");
     font.setPointSize(16);
     QGuiApplication::setFont(font);
 
+    Application *_app = new Application();
+    Q_UNUSED(_app)
+
+    QQmlApplicationEngine engine;
     engine.addImportPath(QStringLiteral("qrc:/"));  // Install SmartHome modules
 
     const QUrl url(QStringLiteral("qrc:/main/main.qml"));

@@ -6,16 +6,20 @@ set(EXECUTABLE_NAME "GUI")
 project(${EXECUTABLE_NAME} VERSION 0.1 LANGUAGES CXX)
 
 # Tell CMake to call moc automaticly
+set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)   # Run rcc automatically
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Quick Core Qml Gui QuickControls2 Core5Compat)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
 # Telling CMake location of our app .qrc file
-qt_add_resources(APP_RESOURCES ${CMAKE_CURRENT_LIST_DIR}/Qml/app.qrc)
+qt_add_resources(APP_RESOURCES ${CMAKE_CURRENT_SOURCE_DIR}/Qml/app.qrc)
 qt_add_resources(CONTROL_RESOURCES ${CMAKE_SOURCE_DIR}/Components/qml.qrc)
-# qt_add_resources(IMAGE_RESOURCES ${CMAKE_CURRENT_LIST_DIR}/Image.qrc)
 
 # collect all source files in the main project
 file(GLOB CPP_SOURCES *.cpp)
@@ -26,7 +30,6 @@ qt_add_executable(${EXECUTABLE_NAME}
     ${HPP_SOURCES}
     ${APP_RESOURCES}
     ${CONTROL_RESOURCES}
-    # ${IMAGE_RESOURCES}
 )
 
 target_compile_features(

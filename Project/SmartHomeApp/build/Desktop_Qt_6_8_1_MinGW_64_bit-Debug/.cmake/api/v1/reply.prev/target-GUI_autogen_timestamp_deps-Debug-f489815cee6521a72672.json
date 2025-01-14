@@ -1,0 +1,38 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"GUI/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "GUI_qmlimportscan::@0e4c3e8d74fe2080f54e"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "QtInternalTargets"
+	},
+	"id" : "GUI_autogen_timestamp_deps::@0e4c3e8d74fe2080f54e",
+	"isGeneratorProvided" : true,
+	"name" : "GUI_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "GUI",
+		"source" : "GUI"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

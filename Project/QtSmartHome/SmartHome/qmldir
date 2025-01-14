@@ -1,0 +1,24 @@
+module SmartHome
+BufferedGraph 1.0 Qml/bufferedgraph/BufferedGraph.qml
+ButtonGroup 1.0 Qml/buttons/ButtonGroup.qml
+FiveWayButton 1.0 Qml/buttons/FiveWayButton.qml
+SimpleButton 1.0 Qml/buttons/SimpleButton.qml
+TabButton 1.0 Qml/buttons/TabButton.qml
+TextButton 1.0 Qml/buttons/TextButton.qml
+DropDownMenu 1.0 Qml/dropdown/DropDownMenu.qml
+BasicGauge 1.0 Qml/gauges/BasicGauge.qml
+Gauge 1.0 Qml/gauges/Gauge.qml
+Graph 1.0 Qml/graph/Graph.qml
+MultiSlider 1.0 Qml/slider/MultiSlider.qml
+SimpleSlider 1.0 Qml/slider/SimpleSlider.qml
+Slider 1.0 Qml/slider/Slider.qml
+OnOffSwitch 1.0 Qml/switches/OnOffSwitch.qml
+SlideSwitch 1.0 Qml/switches/SlideSwitch.qml
+HTabBar 1.0 Qml/tabwidget/HTabBar.qml
+TabPage 1.0 Qml/tabwidget/TabPage.qml
+TabWidget 1.0 Qml/tabwidget/TabWidget.qml
+VTabBar 1.0 Qml/tabwidget/VTabBar.qml
+PickerPathView 1.0 Qml/timepicker/PickerPathView.qml
+TimePicker 1.0 Qml/timepicker/TimePicker.qml
+ScrollDial 1.0 Qml/valuesetter/ScrollDial.qml
+ScrollWheel 1.0 Qml/valuesetter/ScrollWheel.qml

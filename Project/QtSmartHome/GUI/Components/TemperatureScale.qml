@@ -18,7 +18,7 @@ Column {
         anchors.right: parent.right
 
         Text {
-            y: -font.pixelSize/2
+            y: -font.pointSize/2
             height: 1
             text: scaleModel[scaleModel.length-1]
             color: "white"
@@ -62,7 +62,7 @@ Column {
             Row {
 
                 Text {
-                    y: -font.pixelSize / 2
+                    y: -font.pointSize / 2
                     height: 1
                     text: scaleModel[scaleModel.length - 2 - index]
                     color: "white"

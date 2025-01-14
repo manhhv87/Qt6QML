@@ -36,7 +36,7 @@ PathView {
     delegate: Text {
         font.family: "Arial"
         font.bold: true
-        font.pixelSize: 50
+        font.pointSize: 50
         smooth: true
         color: "black"
         horizontalAlignment: Text.AlignHCenter

@@ -76,5 +76,11 @@
         <file>Images/light/balloon/balloon_triangle.svg</file>
         <file>Images/fader/button_normal.svg</file>
         <file>Images/fader/button_pressed.svg</file>
+        <file>Images/icons/light_on.png</file>
+        <file>Fonts/CodecPro-Italic.ttf</file>
+        <file>Fonts/CodecPro-Regular.ttf</file>
+        <file>Fonts/fontawesome.otf</file>
+        <file>Fonts/Lato-Bold.ttf</file>
+        <file>Fonts/Lato-Regular.ttf</file>
     </qresource>
 </RCC>

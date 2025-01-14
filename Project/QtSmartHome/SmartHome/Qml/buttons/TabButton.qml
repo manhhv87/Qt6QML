@@ -4,7 +4,7 @@ import QtQuick 2.15
 A special button that can switch between the tabs.
 */
 Rectangle {
-    id: rootId
+    id: tabButton
 
     property int index: 0
     property bool hover: false
@@ -13,7 +13,7 @@ Rectangle {
     property color bottomColor: "#403e41"
     property bool active: false
 
-    objectName: "rootId"
+    objectName: "tabButton"
 
     onActiveChanged: state = active ? "active" : ""
 
@@ -29,12 +29,12 @@ Rectangle {
     gradient: Gradient {
         GradientStop {
             position: 0
-            color: rootId.topColor
+            color: tabButton.topColor
         }
 
         GradientStop {
             position: 1
-            color: rootId.bottomColor
+            color: tabButton.bottomColor
         }
     }
 
@@ -43,7 +43,7 @@ Rectangle {
         anchors.fill: parent
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        color: rootId.hover ? "black" : "white"
+        color: tabButton.hover ? "black" : "white"
     }
 
     states: [
@@ -51,7 +51,7 @@ Rectangle {
             name: "hovered"
 
             PropertyChanges {
-                target: rootId
+                target: tabButton
                 topColor: "#b4b4b4"
                 bottomColor: "#b4b4b4"
             }
@@ -60,7 +60,7 @@ Rectangle {
             name: "active"
 
             PropertyChanges {
-                target: rootId
+                target: tabButton
                 topColor: "#b4b4b4"
                 bottomColor: "#b4b4b4"
                 border.color: "#b4b4b4"
@@ -78,23 +78,23 @@ Rectangle {
         hoverEnabled: true
 
         onEntered: {
-            rootId.hover = true
-            rootId.state = "hovered"
+            tabButton.hover = true
+            tabButton.state = "hovered"
         }
 
         onExited: {
-            rootId.hover = false
-            if(rootId.active == true)
+            tabButton.hover = false
+            if(tabButton.active == true)
             {
-                rootId.state = "active"
+                tabButton.state = "active"
             } else {
-                rootId.state = ""
+                tabButton.state = ""
             }
         }
 
         onClicked: {
-            rootId.active = true
-            rootId.activated()
+            tabButton.active = true
+            tabButton.activated()
         }
     }
 }

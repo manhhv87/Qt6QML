@@ -1,3 +1,5 @@
+#include <QFont>
+#include <QFontDatabase>
 #include <QtQuick/QQuickView>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
@@ -11,6 +13,12 @@ int main(int argc, char *argv[])
 #endif
 
     QGuiApplication app(argc, argv);
+
+    QFontDatabase::addApplicationFont(":/SmartHome/Fonts/Lato-Regular.ttf");
+    QFont font("Lato");
+    font.setPointSize(16);
+    // font.setPixelSize(16);
+    QGuiApplication::setFont(font);
 
     QQmlApplicationEngine engine;
     engine.addImportPath("qrc:/");  // Install SmartHome modules

@@ -1,4 +1,5 @@
 import QtQuick 2.15
+import "qrc:/SmartHome/Qml/timepicker"
 
 /**
  * This is the tab for showing the timer settings

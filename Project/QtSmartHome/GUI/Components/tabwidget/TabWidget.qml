@@ -176,13 +176,13 @@ Rectangle {
     binding.
     */
     HTabBar {
-        id: topBar
+        id: topBar    
         x: leftBar.visible ? leftBar.width : 0
         height: 0
         width: tabWidget.width - ( leftBar.visible ? leftBar.width : 0 )
         - ( rightBar.visible ? rightBar.width : 0 )
         visible: false
-        onCurrentChanged: showPage( index )
+        onCurrentChanged: (index) => showPage( index )
     }
 
     VTabBar {
@@ -192,7 +192,7 @@ Rectangle {
         height: tabWidget.height - ( topBar.visible ? topBar.height : 0 )
         - ( bottomBar.visible ? bottomBar.height : 0 )
         visible: false
-        onCurrentChanged: showPage( index )
+        onCurrentChanged: (index) => showPage( index )
     }
 
     VTabBar {
@@ -205,7 +205,7 @@ Rectangle {
         height: tabWidget.height - ( topBar.visible ? topBar.height : 0 )
         - ( bottomBar.visible ? bottomBar.height : 0 )
         visible: false
-        onCurrentChanged: showPage( index )
+        onCurrentChanged: (index) => showPage( index )
     }
 
     HTabBar {
@@ -217,7 +217,7 @@ Rectangle {
         - ( rightBar.visible ? rightBar.width : 0 )
         height: 0
         visible: false
-        onCurrentChanged: showPage( index )
+        onCurrentChanged: (index) => showPage( index )
     }
 
     Component.onCompleted: showPage( 0 )

@@ -87,5 +87,9 @@
         <file>Components/WeatherItem.qml</file>
         <file>Components/WeatherView.qml</file>
         <file>Components/WindSlider.qml</file>
+        <file>Images/temperature/handle.png</file>
+        <file>Images/temperature/temperature_background.svg</file>
+        <file>Images/temperature/temperature_fill.svg</file>
+        <file>Images/temperature/temperature_reflex.svg</file>
     </qresource>
 </RCC>

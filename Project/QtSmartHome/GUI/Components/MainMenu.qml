@@ -73,7 +73,7 @@ Item {
 
         /*
          * This helper function resets the state of all FanStacks. After calling this
-         * functino all stacks are active and fanned in.
+         * function all stacks are active and fanned in.
          */
         function showAll() {
             for( var i = 0; i < children.length; i++ ) {
@@ -115,7 +115,7 @@ Item {
             id:          stack1
             objectName: "stack1"
             model: hardwareModels.lightModel
-            onFanOut: menu.setActive(name)
+            onFanOut: (name) => menu.setActive(name)
             backPage: "settings/LightSettings.qml"
             flippedXPos: -x
             flippedYPos: -mainMenu.y
@@ -135,7 +135,7 @@ Item {
             id:          stack2
             objectName: "stack2"
             model: hardwareModels.heatingModel
-            onFanOut: menu.setActive(name)
+            onFanOut: (name) => setActive(name)
             backPage: "settings/HeatingSettings.qml"
             flippedXPos: -x
             flippedYPos: -mainMenu.y
@@ -155,7 +155,7 @@ Item {
             id:          stack3
             objectName: "stack3"
             model: hardwareModels.blindModel
-            onFanOut: menu.setActive(name)
+            onFanOut: (name) => menu.setActive(name)
             backPage: "settings/JalousieSettings.qml"
             flippedXPos: -x
             flippedYPos: -mainMenu.y
@@ -175,7 +175,7 @@ Item {
             id:          stack4
             objectName: "stack4"
             model: hardwareModels.windowModel
-            onFanOut: menu.setActive(name)
+            onFanOut: (name) => menu.setActive(name)
             backPage: "settings/WindowSettings.qml"
             flippedXPos: -x
             flippedYPos: -mainMenu.y

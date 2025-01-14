@@ -2,11 +2,8 @@ import QtQuick 2.15
 import QtQuick.Window 2.15
 import QtQuick.Layouts
 import QtQuick.Controls
-<<<<<<< HEAD
 import QtQuick.Controls.impl
 import Qt5Compat.GraphicalEffects
-=======
->>>>>>> 16d3e44a7dcd16bd3ec27412e3a2b136a1e36860
 import SmartHome 1.0
 
 Page {

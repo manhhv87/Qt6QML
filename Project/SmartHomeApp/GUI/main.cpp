@@ -14,7 +14,6 @@ int main(int argc, char *argv[])
 #endif
 
     QGuiApplication app(argc, argv);
-<<<<<<< HEAD
 
     int latoID = QFontDatabase::addApplicationFont(":/SmartHome/Fonts/Lato-Regular.ttf");
     QStringList loadedFontFamilies = QFontDatabase::applicationFontFamilies(latoID);
@@ -24,14 +23,13 @@ int main(int argc, char *argv[])
     } else {
         qWarning("Error: fail to load Lato font");
     }
-=======
+
     QQuickStyle::setStyle("Basic");
 
     QFontDatabase::addApplicationFont(":/SmartHome/Fonts/Lato-Regular.ttf");
     QFont font("Lato");
     font.setPointSize(16);
     QGuiApplication::setFont(font);
->>>>>>> 16d3e44a7dcd16bd3ec27412e3a2b136a1e36860
 
     Application *_app = new Application();
     Q_UNUSED(_app)
